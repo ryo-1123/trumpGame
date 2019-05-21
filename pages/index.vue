@@ -2,6 +2,8 @@
   <section class="container">
     <div>
       <logo />
+      <logo />
+      <logo />
       <h1 class="title">
         trupmGame
       </h1>
