@@ -1,4 +1,4 @@
-# trupmGame
+# trumpGame
 
 > My dandy Nuxt.js project
 
