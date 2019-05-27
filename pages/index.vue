@@ -1,37 +1,22 @@
 <template>
   <section class="container">
     <div>
-      <logo />
-      <logo />
-      <logo />
       <h1 class="title">
         trupmGame
       </h1>
-      <h2 class="subtitle">
-        My dandy Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
+      <trump />
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+// importでデータを輸入する
+import Trump from '~/components/Trump.vue'
 
+// exportでデータを輸出する
 export default {
   components: {
-    Logo
+    Trump
   }
 }
 </script>
@@ -44,6 +29,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgb(122, 223, 112);
 }
 
 .title {
@@ -62,9 +48,5 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
