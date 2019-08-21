@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <h1 class="title">
-        trupmGame
+        trumpGame
       </h1>
       <trump />
     </div>
