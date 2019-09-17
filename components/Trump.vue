@@ -1,15 +1,16 @@
 <template>
-  <div class="trump-wrapper">
+  <div class="trumpWrapper">
     <div
       v-for="n in 52"
       :key="n"
+      class="showTrump"
     >
       <img
         :src="trump[n-1].on
           ? trump[n-1].url
           : trump[n-1].backUrl"
         width="100"
-        @click="trump[n-1].on=!trump[n-1].on"
+        @click="trump[n-1].on=!trump[n-1].on, checkCard()"
       >
       <p>{{ trump[n-1].num }}</p>
     </div>
@@ -64,6 +65,19 @@ export default {
     return {
       trump
     }
+  },
+  methods: {
+    checkCard() {
+
+    }
   }
 }
 </script>
+
+<style>
+.showTrump {
+  display: inline-block;
+  margin: 0 7px;
+  width: 87px;
+}
+</style>
